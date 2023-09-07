@@ -11,3 +11,8 @@ commit 2. add src & start
 commit 3. start dev server
 5. npx webpack server --mode production
 6. add public file (index.html style.css)
+
+commit 4  __dirname or process.cwd() different
+7. terminal run => node test.js | direction in src terminal run => node ../test.js
+  - __dirname absolute path of current file
+  - process.cwd() absolute path of the executed node command
