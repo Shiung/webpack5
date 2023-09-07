@@ -29,5 +29,12 @@ module.exports = {
     filename: '[name].js', // default to main.js
 
     path: path.resolve(__dirname, 'dist')
+  },
+
+  watch: true, // --watch 如同指令
+  watchOptions: {
+    // ignored: /node_modules/
+    ignored: [path.resolve(__dirname, 'node_modules')]
+    // ignored: ['**/node_modules', '**/src/info.js']
   }
 }

@@ -24,3 +24,6 @@ commit 5. webpack.config.js
 
 commit 6. webpack.config.js 2
 9. devtool | iife | clean
+
+commit 7. webpack.config.js 3 watch options 
+10. watchOptions 
