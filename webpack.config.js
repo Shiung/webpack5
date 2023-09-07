@@ -19,7 +19,7 @@ module.exports = {
   // context 指定webpack 路徑的資料是哪個
   context: path.resolve(__dirname, 'src'), // decides where ./ points to
   entry: {
-    mainTest2: './entry.js'
+    main: './entry.js'
   },
   // 2. dir-------------------------------------------------------------------------------end
 
@@ -31,10 +31,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
 
-  watch: true, // --watch 如同指令
+  // watch: true, // --watch 如同指令
   watchOptions: {
     // ignored: /node_modules/
-    ignored: [path.resolve(__dirname, 'node_modules')]
-    // ignored: ['**/node_modules', '**/src/info.js']
+    // ignored: [path.resolve(__dirname, 'node_modules')]
+    ignored: ['**/node_modules', '**/src/info.js']
+  },
+
+  devServer: {
+    compress: true,
+    port: 6789,
+    // webSocketServer: 'ws', // 後續
   }
 }

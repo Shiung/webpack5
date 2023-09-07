@@ -27,3 +27,9 @@ commit 6. webpack.config.js 2
 
 commit 7. webpack.config.js 3 watch options 
 10. watchOptions 
+
+commit 8. webpack.config.js 3 devServer
+11. devServe
+  - 啟動 npx webpack serve
+  - webpack.config.js watch 不需要 因為請動devServer DEFAULT watch 
+  - 後續啟動 ws server
