@@ -16,3 +16,8 @@ commit 4  __dirname or process.cwd() different
 7. terminal run => node test.js | direction in src terminal run => node ../test.js
   - __dirname absolute path of current file
   - process.cwd() absolute path of the executed node command
+
+commit 5. webpack.config.js
+8. add webpack.config.js
+  - entry dir
+  - output path
