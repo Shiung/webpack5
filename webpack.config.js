@@ -42,5 +42,24 @@ module.exports = {
     compress: true,
     port: 6789,
     // webSocketServer: 'ws', // 後續
+
+    hot: true,
+    // 靜態資源 
+    static: [
+      {
+        directory: path.resolve(__dirname, 'public'),
+        watch: true,
+        publicPath: '/'
+      },
+      {
+        directory: path.resolve(__dirname, 'style'),
+        watch: false,
+        publicPath: '/style/',
+        serveIndex: false, // default true
+        // staticOptions: {
+        //   index: 'about.html'
+        // }
+      }
+    ]
   }
 }

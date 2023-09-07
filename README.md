@@ -33,3 +33,6 @@ commit 8. webpack.config.js 3 devServer
   - 啟動 npx webpack serve
   - webpack.config.js watch 不需要 因為請動devServer DEFAULT watch 
   - 後續啟動 ws server
+
+commit 8. webpack.config.js 3 devServer static
+12. static
