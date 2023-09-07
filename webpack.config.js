@@ -2,7 +2,8 @@ const path = require('path')
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map', // 產生sorce map under file
+  devtool: 'source-map', // create new soure map file 
   
 
   // 1. dir-------------------------------------------------------------------------------
@@ -23,8 +24,8 @@ module.exports = {
   // 2. dir-------------------------------------------------------------------------------end
 
   output: {
-    iife: true,
-    clean: true,
+    // iife: true,
+    clean: true, // clean-webpack-plugin
     filename: '[name].js', // default to main.js
 
     path: path.resolve(__dirname, 'dist')

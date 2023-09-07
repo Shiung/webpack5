@@ -21,3 +21,6 @@ commit 5. webpack.config.js
 8. add webpack.config.js
   - entry dir
   - output path
+
+commit 6. webpack.config.js 2
+9. devtool | iife | clean
