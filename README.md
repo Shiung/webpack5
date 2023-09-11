@@ -36,3 +36,8 @@ commit 8. webpack.config.js 3 devServer
 
 commit 8. webpack.config.js 3 devServer static
 12. static
+
+commit 9. webpack.config.js  optimization
+13. optimize minimize if true use minimizer: [] & with 'terser-webpack-plugin'
+14. webpack has auto deDup --> 重複import 的相同module webpack 只會載入一次
+

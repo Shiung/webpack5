@@ -3,3 +3,6 @@ export function createElem(tag, innerText) {
   elem.innerText = innerText
   document.body.append(elem)
 }
+
+import shared from './sharded'
+console.log('shared', shared)

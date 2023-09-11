@@ -23,6 +23,13 @@ module.exports = {
   },
   // 2. dir-------------------------------------------------------------------------------end
 
+  optimization: {
+    // minimize: false, // default to true under prod. mode
+
+    minimize: true,
+    // minimizer: ['...', new plugin()] // js, css ,html
+  },
+
   output: {
     // iife: true,
     clean: true, // clean-webpack-plugin

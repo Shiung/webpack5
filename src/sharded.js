@@ -1,0 +1,1 @@
+export default 'this_is_shared_file'
