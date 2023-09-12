@@ -41,3 +41,8 @@ commit 9. webpack.config.js  optimization
 13. optimize minimize if true use minimizer: [] & with 'terser-webpack-plugin'
 14. webpack has auto deDup --> 重複import 的相同module webpack 只會載入一次
 
+
+commit 10. webpack.config.js entry
+15. webpack entry option
+  - dependOn -> 將移賴的module 產生一個chunk store 依賴的檔案載入使用 (如果沒設置 檔案裡import 的module 會全部包成一包)
+  - filename

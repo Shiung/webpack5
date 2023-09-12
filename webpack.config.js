@@ -19,7 +19,14 @@ module.exports = {
   // context 指定webpack 路徑的資料是哪個
   context: path.resolve(__dirname, 'src'), // decides where ./ points to
   entry: {
-    main: './entry.js'
+    // main: './entry.js'
+    main: {
+      import: './entry.js',
+      dependOn: 'shared',
+      // filename: 'testSrc/[name].js'
+    },
+    main2: './entryTwo.js',
+    shared: './sharded.js'
   },
   // 2. dir-------------------------------------------------------------------------------end
 
