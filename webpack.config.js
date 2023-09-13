@@ -34,9 +34,11 @@ module.exports = {
   optimization: {
     // minimize: false, // default to true under prod. mode
 
-    usedExports: false,
+    // usedExports: false,
     // minimize: true,
     // minimizer: ['...', new plugin()] // js, css ,html
+
+    sideEffects: true,
   },
 
   output: {

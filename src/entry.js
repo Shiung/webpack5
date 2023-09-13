@@ -8,3 +8,5 @@ createElem('h1', msg)
 
 import shared from './sharded'
 console.log('shared', shared)
+
+import mySideEffect from './mySideEffect'

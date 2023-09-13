@@ -48,4 +48,7 @@ commit 10. webpack.config.js entry
   - filename
 
 commit 11. webpack.config.js tree shaking
-16. removing unused codes (unused harmony export square)
+16. removing unused codes (unused harmony export square) (watch teacher version)
+
+commit 12. webpack.config.js side effect 
+17. side effect (watch teacher version)
