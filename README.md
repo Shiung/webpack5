@@ -65,3 +65,10 @@ commit 14. lazy loading webpack.config.js asyncChunks
 20. splitChunks | output chunkFilename
   - splitChunks chunkIds option 
   - chunkFilename can use  webpackChunkName: 'xxxx' to set name for file in import side
+
+commit 15. webpack.config.js spiltChunk (follow teacher wp-splitChunksPlugin)
+21. splitChunk
+  - chunks:
+    - all 對所有檔案進行切分
+    - async 只針對 non-initial dynamic file 進行切分
+    - inital 只針對entry point 入口檔案 

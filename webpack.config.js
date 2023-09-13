@@ -3,8 +3,8 @@ const path = require('path')
 module.exports = {
   mode: process.env.NODE_ENV,
   // devtool: 'inline-source-map', // 產生sorce map under file
-  // devtool: 'source-map', // create new soure map file 
-  devtool: 'inline-source-map',
+  devtool: 'source-map', // create new soure map file 
+  // devtool: 'inline-source-map',
   
 
   // 1. dir-------------------------------------------------------------------------------
@@ -20,14 +20,14 @@ module.exports = {
   // context 指定webpack 路徑的資料是哪個
   context: path.resolve(__dirname, 'src'), // decides where ./ points to
   entry: {
-    main: './entry.js'
-    // main: {
-    //   import: './entry.js',
-    //   dependOn: 'shared',
-    //   // filename: 'testSrc/[name].js'
-    // },
-    // main2: './entryTwo.js',
-    // shared: './sharded.js'
+    // main: './entry.js'
+    main: {
+      import: './entry.js',
+      dependOn: 'shared',
+      // filename: 'testSrc/[name].js'
+    },
+    main2: './entryTwo.js',
+    shared: './sharded.js'
   },
   // 2. dir-------------------------------------------------------------------------------end
 
@@ -35,7 +35,7 @@ module.exports = {
     // minimize: false, // default to true under prod. mode
 
     // usedExports: false,
-    // minimize: true,
+    minimize: true,
     // minimizer: ['...', new plugin()] // js, css ,html
 
     sideEffects: true,
@@ -43,6 +43,7 @@ module.exports = {
     chunkIds: 'named', // 'natural' | 'named' | 'deterministic' | 'size' | 'total-size'
     splitChunks: {
       minSize: 2000, // default value is 2000 bytes
+      chunks:'all', // 'async' | 'all' | 'initial'
     }
   },
 
