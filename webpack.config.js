@@ -39,12 +39,21 @@ module.exports = {
     // minimizer: ['...', new plugin()] // js, css ,html
 
     sideEffects: true,
+
+    chunkIds: 'named', // 'natural' | 'named' | 'deterministic' | 'size' | 'total-size'
+    splitChunks: {
+      minSize: 2000, // default value is 2000 bytes
+    }
   },
 
   output: {
+    asyncChunks: true, // default true
+
     // iife: true,
     clean: true, // clean-webpack-plugin
     filename: '[name].js', // default to main.js
+
+    chunkFilename: '[name].chunk.js',
 
     path: path.resolve(__dirname, 'dist')
   },
@@ -61,7 +70,7 @@ module.exports = {
     port: 6789,
     // webSocketServer: 'ws', // 後續
 
-    hot: true,
+    // hot: true,
     // 靜態資源 
     static: [
       {

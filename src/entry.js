@@ -10,3 +10,5 @@ import shared from './sharded'
 console.log('shared', shared)
 
 import mySideEffect from './mySideEffect'
+
+import './asyncComp/creatBtn'

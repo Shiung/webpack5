@@ -55,3 +55,13 @@ commit 12. webpack.config.js side effect
 
 commit 13. es6 dynamic module crash course
 18. async await function (watch teacher file es-async)
+
+commit 14. lazy loading webpack.config.js asyncChunks
+19. asyncChunks setting controll lazy loading allow or not
+  - bundled js file has initial-chunk or non-initial-chunk
+    - initial-chunk means entry point file or first time loading file
+    - non-initial-chunk means splitChunks file when u wants use then load the file
+  - lazy loading components for non-init
+20. splitChunks | output chunkFilename
+  - splitChunks chunkIds option 
+  - chunkFilename can use  webpackChunkName: 'xxxx' to set name for file in import side
