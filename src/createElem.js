@@ -6,3 +6,9 @@ export function createElem(tag, innerText) {
 
 import shared from './sharded'
 console.log('shared', shared)
+
+
+// tree shaking test unused code
+export function deadCode () {
+  return 'unused code msg'
+}

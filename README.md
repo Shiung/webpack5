@@ -46,3 +46,6 @@ commit 10. webpack.config.js entry
 15. webpack entry option
   - dependOn -> 將移賴的module 產生一個chunk store 依賴的檔案載入使用 (如果沒設置 檔案裡import 的module 會全部包成一包)
   - filename
+
+commit 11. webpack.config.js tree shaking
+16. removing unused codes (unused harmony export square)
