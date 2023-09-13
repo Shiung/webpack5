@@ -52,3 +52,6 @@ commit 11. webpack.config.js tree shaking
 
 commit 12. webpack.config.js side effect 
 17. side effect (watch teacher version)
+
+commit 13. es6 dynamic module crash course
+18. async await function (watch teacher file es-async)
